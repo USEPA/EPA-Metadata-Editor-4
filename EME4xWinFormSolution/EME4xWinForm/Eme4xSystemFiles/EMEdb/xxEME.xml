@@ -1,0 +1,150 @@
+<?xml version="1.0" standalone="yes"?>
+<EME>
+  <xs:schema id="EME" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="XpathSettings">
+      <xs:complexType>
+        <xs:sequence>
+		  <xs:element name="orderedId">
+            <xs:simpleType>
+              <xs:restriction base="xs:integer">
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="propName">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="50" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="Iso19115_2">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="Iso19115_1">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="Csdgm">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+		  <xs:element name="tabNo">
+            <xs:simpleType>
+              <xs:restriction base="xs:integer">
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+		  <xs:element name="spellcheck">
+            <xs:simpleType>
+              <xs:restriction base="xs:boolean">
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+		  <xs:element name="srcTable">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+		  <xs:element name="srcField">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+		  <xs:element name="cluster">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+		  <xs:element name="clusterUpdate">
+            <xs:simpleType>
+              <xs:restriction base="xs:boolean">
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+		  <xs:element name="help">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    <xs:element name="EME" msdata:IsDataSet="true" msdata:MainDataTable="XpathSettings" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="XpathSettings" />
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+<XpathSettings>
+<orderedId>10020</orderedId>
+<propName>IdInfo_citation_TitleXpath</propName>
+<Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='citation']/*[local-name()='CI_Citation']/*[local-name()='title']/*[local-name()='CharacterString']</Iso19115_2>
+<Iso19115_1> </Iso19115_1>
+<Csdgm>idinfo/citation/citeinfo/title</Csdgm> 
+<tabNo>1</tabNo>
+<spellcheck>1</spellcheck>
+<srcTable>Citation</srcTable>
+<clusterUpdate>0</clusterUpdate>
+</XpathSettings>
+<XpathSettings>
+<orderedId>10060</orderedId>
+<propName>IdInfo_abstractXpath</propName>
+<Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='abstract']/*[local-name()='CharacterString']</Iso19115_2>
+<Iso19115_1> </Iso19115_1>
+<Csdgm>idinfo/descript/abstract</Csdgm>
+<tabNo>1</tabNo>
+<spellcheck>1</spellcheck>
+<clusterUpdate>0</clusterUpdate>
+</XpathSettings>
+<XpathSettings>
+<orderedId>10070</orderedId>
+<propName>IdInfo_purposeXpath</propName>
+<Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='purpose']/*[local-name()='CharacterString']</Iso19115_2>
+<Iso19115_1> </Iso19115_1>
+<Csdgm>idinfo/descript/purpose</Csdgm> 
+<tabNo>1</tabNo>
+<spellcheck>1</spellcheck>
+<clusterUpdate>0</clusterUpdate>
+</XpathSettings>
+<XpathSettings>
+<orderedId>10070</orderedId>
+<propName>DateStampXpath</propName>
+<Iso19115_2>//*[local-name()='dateStamp']/*[[local-name()='Date'] or [local-name()='DateTime']] </Iso19115_2>
+<Iso19115_1> </Iso19115_1>
+<Csdgm> </Csdgm> 
+<tabNo>1</tabNo>
+<spellcheck>0</spellcheck>
+<clusterUpdate>0</clusterUpdate>
+</XpathSettings>
+<XpathSettings>
+<orderedId>10070</orderedId>
+<propName>contact_CI_ResponsiblePartyXpath</propName>
+<Iso19115_2> </Iso19115_2>
+<Iso19115_1> </Iso19115_1>
+<Csdgm> </Csdgm> 
+<tabNo>1</tabNo>
+<spellcheck>0</spellcheck>
+<clusterUpdate>0</clusterUpdate>
+</XpathSettings>
+
+</EME>

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C6B4F87-3EAA-45EE-A309-0668EF064BDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmeLibrary</RootNamespace>
+    <AssemblyName>EmeLibrary</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>eme4.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmeDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmeDatabase.Designer.cs">
+      <DependentUpon>EmeDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\SaveEvent.cs" />
+    <Compile Include="isoNodes.cs" />
+    <Compile Include="PageController.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="uc_distribution.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_distribution.Designer.cs">
+      <DependentUpon>uc_distribution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_extentTemporal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_extentTemporal.Designer.cs">
+      <DependentUpon>uc_extentTemporal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_ResponsibleParty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_ResponsibleParty.Designer.cs">
+      <DependentUpon>uc_ResponsibleParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils1.cs" />
+    <Compile Include="xmlFieldMaps.cs" />
+    <Compile Include="EmeLT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmeLT.Designer.cs">
+      <DependentUpon>EmeLT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlNodeXpathtoElements.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EmeDatabase.resx">
+      <DependentUpon>EmeDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmeLT.resx">
+      <DependentUpon>EmeLT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_distribution.resx">
+      <DependentUpon>uc_distribution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_extentTemporal.resx">
+      <DependentUpon>uc_extentTemporal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_ResponsibleParty.resx">
+      <DependentUpon>uc_ResponsibleParty.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\docBlack 2.jpg" />
+    <Content Include="Resources\docBlack3.jpg" />
+    <Content Include="Resources\Eme4xv2.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\EmeIcon.PNG" />
+    <Content Include="Resources\fileIcon.jpg" />
+    <Content Include="Resources\open.gif" />
+    <Content Include="Resources\save.bmp" />
+    <Content Include="Resources\saveas.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="eme4.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

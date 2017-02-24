@@ -1,0 +1,35 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ArcCatalogAddinEme4Tools</Name>
+  <AddInID>{0708cd54-0b73-43f1-9c1c-61a1b37f02e3}</AddInID>
+  <Description>This Add-In allows users to edit and import ISO 19115/19115-2 metadata into supported objects such as a feature classes.  This Add-In is in-progress since native ISO records currently have limited support in ArcCatalog.</Description>
+  <Version>1.0</Version>
+  <Image>Images\ArcCatalogAddinEme4Tools.png</Image>
+  <Author>Innovate! Inc.</Author>
+  <Company>Innovate Inc</Company>
+  <Date>7/16/2014</Date>
+  <Targets>
+    <Target name="Desktop" version="10.2" />
+  </Targets>
+  <AddIn language="CLR" library="ArcCatalogAddinEme4Tools.dll" namespace="ArcCatalogAddinEme4Tools">
+    <ArcCatalog>
+      <Commands>
+        <Button id="ArcCatalogAddinEme4Tools_EditIsoMetadata" class="EditIsoMetadata" message="Edit ISO Metadata" caption="Edit ISO Metadata" tip="Click to edit ISO 19115/19115-2 metadata with EME 4.0 " category="Add-In Controls" image="Images\EditIsoMetadata_1.png" />
+        <Button id="ArcCatalogAddinEme4Tools_ImportMetadata" class="ImportMetadata" message="Import ISO Metadata" caption="Import ISO Metadata" tip="Click to import an ISO 19115/19115-2 metadata record into your selected object" category="Add-In Controls" image="Images\ImportMetadata.png" />
+        <Button id="ArcCatalogAddinEme4Tools_ExportMetadata" class="ExportMetadata" message="Export Metadata" caption="Export Metadata" tip="Click to export metadata as a standalone xml file" category="Add-In Controls" image="Images\ExportMetadata.png" />
+        <Button id="ArcCatalogAddinEme4Tools_ClearMetadata" class="ClearMetadata" message="Clear Metadata" caption="Clear Metadata" tip="Click to clear metadata for your selected object(s)" category="Add-In Controls" image="Images\ClearMetadata.png" />
+        <Button id="ArcCatalogAddinEme4Tools_CreateNewMetadata" class="CreateNewMetadata" message="Click to create a new metadata record from scratch. Existing metadata will be erased." caption="Click to create a new metadata record from scratch" tip="Click to create a new metadata record from scratch" category="Add-In Controls" image="Images\CreateNewMetadata.png" />
+      </Commands>
+      <Toolbars>
+        <Toolbar id="InnovateInc_ArcCatalogAddinEme4Tools_EME_Tools" caption="EPA Metadata 4.0 Tools" showInitially="true">
+          <Items>
+            <Button refID="ArcCatalogAddinEme4Tools_EditIsoMetadata" />
+            <Button refID="ArcCatalogAddinEme4Tools_ImportMetadata" />
+            <Button refID="ArcCatalogAddinEme4Tools_ExportMetadata" />
+            <Button refID="ArcCatalogAddinEme4Tools_ClearMetadata" />
+            <Button refID="ArcCatalogAddinEme4Tools_CreateNewMetadata" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcCatalog>
+  </AddIn>
+</ESRI.Configuration>

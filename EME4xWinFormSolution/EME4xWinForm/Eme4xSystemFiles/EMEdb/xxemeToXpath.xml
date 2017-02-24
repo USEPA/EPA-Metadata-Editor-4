@@ -1,0 +1,142 @@
+<?xml version="1.0" standalone="yes"?>
+<emeToXpath>
+  <xs:schema id="emeToXpath" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="XpathSettings">
+      <xs:complexType>
+        <xs:sequence>          
+          <xs:element name="propName">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="50" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="Iso19115_2">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="Iso19115_1">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="Csdgm">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:maxLength value="500" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>          
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    <xs:element name="emeToXpath" msdata:IsDataSet="true" msdata:MainDataTable="XpathSettings" msdata:UseCurrentLocale="true" msdata:EnforceConstraints="False">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="XpathSettings" />
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <XpathSettings>
+    <propName>FileIDXpath</propName>
+    <Iso19115_2>//*[local-name()='fileIdentifier']/*[local-name()='CharacterString']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>LanguageXpath</propName>
+    <Iso19115_2>//*[local-name()='language']/*[local-name()='CharacterString']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>HierarchyLevel_MD_ScopeCodeXpath</propName>
+    <Iso19115_2>//*[local-name()='hierarchyLevel']/*[local-name()='MD_ScopeCode']/*[local-name()='CharacterString']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>DateStampXpath</propName>
+    <Iso19115_2>//*[local-name()='dateStamp']/*[[local-name()='Date'] or [local-name()='DateTime']] </Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>contact_CI_ResponsiblePartyXpath</propName>
+    <Iso19115_2>./*[local-name()='contact']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>identificationInfo_citation_citedResponsiblePartyXpath</propName>
+    <Iso19115_2>./*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='citation']/*[local-name()='CI_Citation']/*[local-name()='citedResponsibleParty']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>identificationInfo_pointOfContactXpath</propName>
+    <Iso19115_2>./*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='pointOfContact']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>IdInfo_citation_TitleXpath</propName>
+    <Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='citation']/*[local-name()='CI_Citation']/*[local-name()='title']/*[local-name()='CharacterString']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>IdInfo_abstractXpath</propName>
+    <Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='abstract']/*[local-name()='CharacterString']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>IdInfo_purposeXpath</propName>
+    <Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='purpose']/*[local-name()='CharacterString']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>IdInfo_statusXpath</propName>
+    <Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='status']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>IdInfo_keywordsIsoTopicCatSectionXpath</propName>
+    <Iso19115_2>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory/</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>  
+  <XpathSettings>
+    <propName>IdInfo_keywordsEpaSectionXpath</propName>
+    <Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='descriptiveKeywords']/*[local-name()='MD_Keywords']/*[local-name()='thesaurusName']/*[local-name()='CI_Citation']/*[local-name()='title'][*[local-name()='CharacterString']='EPA GIS Keyword Thesaurus']/../../../..</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>IdInfo_keywordsEpaListXpath</propName>
+    <Iso19115_2>//*[local-name()='identificationInfo']/*[local-name()='MD_DataIdentification']/*[local-name()='descriptiveKeywords']/*[local-name()='MD_Keywords']/*[local-name()='thesaurusName']/*[local-name()='CI_Citation']/*[local-name()='title'][*[local-name()='CharacterString']='EPA GIS Keyword Thesaurus']/../../..//*[local-name()='keyword']</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>IdInfo_keywordsUserSectionXpath</propName>
+    <Iso19115_2>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title[gco:CharacterString='User']/../../../..</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+  <XpathSettings>
+    <propName>IdInfo_keywordsPlaceSectionXpath</propName>
+    <Iso19115_2>//gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:type[gmd:MD_KeywordTypeCode='place']/..</Iso19115_2>
+	<Iso19115_1> </Iso19115_1>
+	<Csdgm> </Csdgm>    
+  </XpathSettings>
+</emeToXpath>
